@@ -1,0 +1,33 @@
+@use "../primitives/colors";
+
+.footer {
+  background-color: colors.$white-color;
+  border-top: 1px solid colors.$grey-blue-color-2;
+  gap: 8px;
+}
+
+.webel-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  border-radius: 8px;
+  flex: 1;
+  cursor: pointer;
+  &.button-secondary {
+    border: 1px solid colors.$grey-color;
+    background-color: transparent;
+  }
+  &.button-primary {
+    border: none;
+    background-color: colors.$webel-color;
+    .button-title {
+      color: colors.$white-color;
+    }
+    .button-icon::before {
+      font-size: 16px;
+      color: colors.$white-color;
+      margin-right: 8px;
+    }
+  }
+}

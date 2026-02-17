@@ -1,0 +1,67 @@
+@use "../primitives/colors";
+
+.border-bottom {
+  border-bottom: 1px solid colors.$grey-blue-color-2;
+}
+.toggle-frequency {
+  background-color: colors.$grey-blue-color;
+  border-radius: 80px;
+  height: 72px;
+  width: 100%;
+  cursor: pointer;
+  .toggle-frequency-button {
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+  }
+
+  .active {
+    border: 2px solid colors.$webel-color;
+    background-color: colors.$webel-light-color;
+    border-radius: 88px;
+  }
+}
+
+.onceView-header-button {
+  border: 1px solid colors.$grey-color;
+  border-radius: 8px;
+  height: 32px;
+  padding: 8px 16px;
+  background-color: transparent;
+}
+
+.month-slider {
+  gap: 8px;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  &-item {
+    height: 56px;
+    min-width: 56px;
+    border-radius: 8px;
+    border: 1px solid colors.$grey-color;
+    &.active {
+      border: 1.5px solid colors.$webel-color;
+      background-color: colors.$webel-light-color;
+    }
+  }
+}
+
+.weekly-view {
+  &-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+    gap: 8px;
+  }
+  &-day {
+    border-radius: 8px;
+    border: 1px solid colors.$grey-color;
+    height: 40px;
+    background-color: transparent;
+    &.active {
+      border: 1.5px solid colors.$webel-color;
+      background-color: colors.$webel-light-color;
+    }
+  }
+}

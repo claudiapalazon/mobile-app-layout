@@ -1,0 +1,17 @@
+@use "primitives/index";
+@use "components/index" as index2;
+@use "views/index" as index3;
+@use "primitives/colors";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  color: colors.$black-color;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  height: 100%;
+  margin: 0px;
+}

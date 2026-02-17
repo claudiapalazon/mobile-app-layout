@@ -1,0 +1,7 @@
+@use "../primitives/colors";
+
+.app-body {
+  background-color: colors.$white-color;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+}
